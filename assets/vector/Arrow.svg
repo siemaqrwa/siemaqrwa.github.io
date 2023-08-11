@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="24"
+   height="24"
+   viewBox="0 0 24 24"
+   version="1.1"
+   id="svg4"
+   sodipodi:docname="Arrow.svg"
+   inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs8" />
+  <sodipodi:namedview
+     id="namedview6"
+     pagecolor="#ffffff"
+     bordercolor="#111111"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="1"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false"
+     inkscape:zoom="22.627417"
+     inkscape:cx="12.219689"
+     inkscape:cy="8.8830289"
+     inkscape:window-width="1880"
+     inkscape:window-height="1091"
+     inkscape:window-x="26"
+     inkscape:window-y="23"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg4" />
+  <path
+     id="polygon2"
+     inkscape:label="polygon2"
+     d="M 3.8936295,1.5483107 H 22.459618 V 20.114299 H 19.365286 V 6.8303343 L 3.7210999,22.467934 1.5381356,22.476828 1.5334076,20.280242 17.177594,4.6426421 H 3.8936295 Z"
+     sodipodi:nodetypes="ccccccccccc"
+     style="stroke-width:1.54717" />
+</svg>

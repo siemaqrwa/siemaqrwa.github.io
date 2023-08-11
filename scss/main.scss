@@ -1,0 +1,362 @@
+@import './colors';
+
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700;800&family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+$font: 'Kanit', sans-serif;
+
+* {
+    margin: 0;
+    margin-block: 0;
+    padding: 0;
+    padding-block: 0;
+}
+
+.background {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999999999999;
+    background-image: url("../assets/images/wall.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    mix-blend-mode: multiply;
+    opacity: .2;
+    user-select: none;
+    pointer-events: none;
+}
+
+a {
+    all: unset;
+}
+
+html,
+body {
+    height: 100%;
+
+    font-family: $font;
+    font-size: 12px;
+    color: $font_color;
+
+    scroll-behavior: smooth;
+}
+
+html {
+    background-color: $bg_color;
+}
+
+ul {
+    list-style: none;
+
+    a {
+        position: relative;
+        cursor: pointer;
+
+        &::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+
+            height: 2px;
+
+            transform: scaleX(0);
+
+            transition: transform .2s;
+
+            transform-origin: right;
+
+            background-color: $font_color;
+        }
+
+        &:hover::after {
+            transform-origin: left;
+            transform: scaleX(1);
+        }
+    }
+}
+
+body {
+    margin: auto;
+    max-width: 140rem;
+}
+
+h1 {
+    font-size: 8rem;
+    margin: 0;
+    margin-block: 0;
+    line-height: .96em;
+}
+
+h2 {
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    border-bottom: 2px solid $font_color;
+    font-size: 4rem;
+    position: sticky;
+    top: 0;
+    background-color: $bg_color;
+    font-weight: 500;
+
+    display: flex;
+    justify-content: space-between;
+
+    small {
+        font-weight: 400;
+    }
+}
+
+header {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    padding-top: 30vh;
+    align-items: end;
+
+    h1 {
+        margin-left: -5rem;
+    }
+
+    h3 {
+        font-weight: 400;
+        font-size: 2rem;
+        margin-top: 4rem;
+        line-height: 1.5em;
+    }
+}
+
+nav {
+    font-size: 2rem;
+}
+
+.image {
+    min-height: 50vh;
+    margin: 5rem 0;
+}
+
+#image_1 {
+
+    background-image: linear-gradient(90deg,
+        $font_color 0% 0.0625%,
+        transparent 0.0625% 5%, /* 5 */
+        $font_color 5% 5.1875%,
+        transparent 5.1875% 10%, /* 10 */
+        $font_color 10% 10.3125%,
+        transparent 10.3125% 15%, /* 15 */
+        $font_color 15% 15.4375%,
+        transparent 15.4375% 20%, /* 20 */
+        $font_color 20% 20.5625%,
+        transparent 20.5625% 25%, /* 25 */
+        $font_color 25% 25.6875%,
+        transparent 25.6875% 30%, /* 30 */
+        $font_color 30% 30.8125%,
+        transparent 30.8125% 35%, /* 35 */
+        $font_color 35% 35.9375%,
+        transparent 35.9375% 40%, /* 40 */
+        $font_color 40% 41.0625%,
+        transparent 41.0625% 45%, /* 45 */
+        $font_color 45% 46.1875%,
+        transparent 46.1875% 50%, /* 50 */
+        $font_color 50% 51.3125%,
+        transparent 51.3125% 55%, /* 55 */
+        $font_color 55% 56.4375%,
+        transparent 56.4375% 60%, /* 60 */
+        $font_color 60% 61.5625%,
+        transparent 61.5625% 65%, /* 65 */
+        $font_color 65% 66.6875%,
+        transparent 66.6875% 70%, /* 70 */
+        $font_color 70% 71.8125%,
+        transparent 71.8125% 75%, /* 75 */
+        $font_color 75% 76.9375%,
+        transparent 76.9375% 80%, /* 80 */
+        $font_color 80% 82.0625%,
+        transparent 82.0625% 85%, /* 85 */
+        $font_color 85% 87.1875%,
+        transparent 87.1875% 90%, /* 90 */
+        $font_color 90% 92.3125%,
+        transparent 92.3125% 95%, /* 95 */
+        $font_color 95% 97.4375%,
+        transparent 97.4375% 100%
+    );
+
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+
+    &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        top: 0;
+        right: 0;
+        background-image: linear-gradient(90deg,
+            transparent 0% 2.5%, /* 2,5 */
+            $font_color 2.5% 2.625%,
+            transparent 2.625% 7.5%, /* 7,5 */
+            $font_color 7.5% 7.75%,
+            transparent 7.75% 12.5%, /* 12,5 */
+            $font_color 12.5% 12.875%,
+            transparent 12.875% 17.5%,
+            $font_color 17.5% 18%,
+            transparent 18% 22.5%,
+            $font_color 22.5% 23.125%,
+            transparent 23.125% 27.5%,
+            $font_color 27.5% 28.25%,
+            transparent 28.25% 32.5%,
+            $font_color 32.5% 33.375%,
+            transparent 33.375% 37.5%,
+            $font_color 37.5% 38.5%,
+            transparent 38.5% 42.5%,
+            $font_color 42.5% 43.625%,
+            transparent 43.625% 47.5%,
+            $font_color 47.5% 48.75%,
+            transparent 48.75% 52.5%,
+            $font_color 52.5% 53.875%,
+            transparent 53.875% 57.5%,
+            $font_color 57.5% 59%,
+            transparent 59% 62.5%,
+            $font_color 62.5% 64.125%,
+            transparent 64.125% 67.5%,
+            $font_color 67.5% 69.25%,
+            transparent 69.25% 72.5%,
+            $font_color 72.5% 74.375%,
+            transparent 74.375% 77.5%,
+            $font_color 77.5% 79.5%,
+            transparent 79.5% 82.5%,
+            $font_color 82.5% 84.625%,
+            transparent 84.625% 87.5%,
+            $font_color 87.5% 89.75%,
+            transparent 89.75% 92.5%,
+            $font_color 92.5% 94.875%,
+            transparent 94.875% 97.5%,
+            $font_color 97.5% 100%,
+            );
+
+        user-select: none;
+        pointer-events: none;
+        z-index: 9;
+    }
+
+    >div {
+        position: absolute;
+        opacity: 0;
+        user-select: none;
+        pointer-events: none;
+    }
+
+    &:hover>div {
+        opacity: 1;
+    }
+
+
+    #i1_circle1 {
+        height: 40vmin;
+        width: 40vmin;
+        border-radius: 100%;
+        background-color: $green;
+        left: calc(-20vmin);
+        top: calc(-20vmin);
+        z-index: 1;
+
+        transition:
+            opacity .5s ease-out,
+            translate .5s ease-out;
+    }
+
+
+    #i1_circle2 {
+        height: 30vmin;
+        width: 30vmin;
+        border-radius: 100%;
+        background-color: $green2;
+        left: calc(-15vmin);
+        top: calc(-15vmin);
+        z-index: 2;
+
+        transition:
+            opacity .3s ease-out,
+            translate .3s ease-out
+    }
+
+
+    #i1_circle3 {
+        height: 20vmin;
+        width: 20vmin;
+        border-radius: 100%;
+        background-color: $green3;
+        left: calc(-10vmin);
+        top: calc(-10vmin);
+        z-index: 3;
+
+        transition:
+            opacity .2s ease-out,
+            translate .2s ease-out;
+    }
+
+
+    #i1_circle4 {
+        height: 10vmin;
+        width: 10vmin;
+        border-radius: 100%;
+        background-color: $green4;
+        left: calc(-5vmin);
+        top: calc(-5vmin);
+        z-index: 4;
+
+        transition:
+            opacity .1s ease-out,
+            translate .1s ease-out;
+    }
+}
+
+p {
+    font-size: 4rem;
+}
+
+ol {
+    font-size: 4rem;
+    list-style: none;
+
+    li {
+        border-bottom: 1px solid $font_color;
+    }
+
+
+    a {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        padding: 1rem 0;
+        transition: opacity .3s;
+        opacity: .5;
+
+        &:hover {
+            opacity: 1;
+        }
+
+
+        img {
+            height: 1em;
+            transform: rotate3d(-2, 0, 0, -0deg);
+            transition: transform .3s;
+        }
+
+        &:hover img {
+            transform: rotate3d(-2, 2, 0, -180deg);
+        }
+
+    }
+
+    small {
+        font-size: 2rem;
+        font-weight: 300;
+    }
+
+
+}

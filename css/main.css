@@ -1,0 +1,229 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700;800&family=Montserrat:wght@300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  margin-block: 0;
+  padding: 0;
+  padding-block: 0;
+}
+
+.background {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999999999999;
+  background-image: url("../assets/images/wall.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  mix-blend-mode: multiply;
+  opacity: 0.2;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  pointer-events: none;
+}
+
+a {
+  all: unset;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: "Kanit", sans-serif;
+  font-size: 12px;
+  color: #0E0C03;
+  scroll-behavior: smooth;
+}
+
+html {
+  background-color: #c4c0af;
+}
+
+ul {
+  list-style: none;
+}
+ul a {
+  position: relative;
+  cursor: pointer;
+}
+ul a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  transform: scaleX(0);
+  transition: transform 0.2s;
+  transform-origin: right;
+  background-color: #0E0C03;
+}
+ul a:hover::after {
+  transform-origin: left;
+  transform: scaleX(1);
+}
+
+body {
+  margin: auto;
+  max-width: 140rem;
+}
+
+h1 {
+  font-size: 8rem;
+  margin: 0;
+  margin-block: 0;
+  line-height: 0.96em;
+}
+
+h2 {
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+  border-bottom: 2px solid #0E0C03;
+  font-size: 4rem;
+  position: sticky;
+  top: 0;
+  background-color: #c4c0af;
+  font-weight: 500;
+  display: flex;
+  justify-content: space-between;
+}
+h2 small {
+  font-weight: 400;
+}
+
+header {
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  padding-top: 30vh;
+  align-items: end;
+}
+header h1 {
+  margin-left: -5rem;
+}
+header h3 {
+  font-weight: 400;
+  font-size: 2rem;
+  margin-top: 4rem;
+  line-height: 1.5em;
+}
+
+nav {
+  font-size: 2rem;
+}
+
+.image {
+  min-height: 50vh;
+  margin: 5rem 0;
+}
+
+#image_1 {
+  background-image: linear-gradient(90deg, #0E0C03 0% 0.0625%, transparent 0.0625% 5%, #0E0C03 5% 5.1875%, transparent 5.1875% 10%, #0E0C03 10% 10.3125%, transparent 10.3125% 15%, #0E0C03 15% 15.4375%, transparent 15.4375% 20%, #0E0C03 20% 20.5625%, transparent 20.5625% 25%, #0E0C03 25% 25.6875%, transparent 25.6875% 30%, #0E0C03 30% 30.8125%, transparent 30.8125% 35%, #0E0C03 35% 35.9375%, transparent 35.9375% 40%, #0E0C03 40% 41.0625%, transparent 41.0625% 45%, #0E0C03 45% 46.1875%, transparent 46.1875% 50%, #0E0C03 50% 51.3125%, transparent 51.3125% 55%, #0E0C03 55% 56.4375%, transparent 56.4375% 60%, #0E0C03 60% 61.5625%, transparent 61.5625% 65%, #0E0C03 65% 66.6875%, transparent 66.6875% 70%, #0E0C03 70% 71.8125%, transparent 71.8125% 75%, #0E0C03 75% 76.9375%, transparent 76.9375% 80%, #0E0C03 80% 82.0625%, transparent 82.0625% 85%, #0E0C03 85% 87.1875%, transparent 87.1875% 90%, #0E0C03 90% 92.3125%, transparent 92.3125% 95%, #0E0C03 95% 97.4375%, transparent 97.4375% 100%);
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+#image_1::after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  top: 0;
+  right: 0;
+  background-image: linear-gradient(90deg, transparent 0% 2.5%, #0E0C03 2.5% 2.625%, transparent 2.625% 7.5%, #0E0C03 7.5% 7.75%, transparent 7.75% 12.5%, #0E0C03 12.5% 12.875%, transparent 12.875% 17.5%, #0E0C03 17.5% 18%, transparent 18% 22.5%, #0E0C03 22.5% 23.125%, transparent 23.125% 27.5%, #0E0C03 27.5% 28.25%, transparent 28.25% 32.5%, #0E0C03 32.5% 33.375%, transparent 33.375% 37.5%, #0E0C03 37.5% 38.5%, transparent 38.5% 42.5%, #0E0C03 42.5% 43.625%, transparent 43.625% 47.5%, #0E0C03 47.5% 48.75%, transparent 48.75% 52.5%, #0E0C03 52.5% 53.875%, transparent 53.875% 57.5%, #0E0C03 57.5% 59%, transparent 59% 62.5%, #0E0C03 62.5% 64.125%, transparent 64.125% 67.5%, #0E0C03 67.5% 69.25%, transparent 69.25% 72.5%, #0E0C03 72.5% 74.375%, transparent 74.375% 77.5%, #0E0C03 77.5% 79.5%, transparent 79.5% 82.5%, #0E0C03 82.5% 84.625%, transparent 84.625% 87.5%, #0E0C03 87.5% 89.75%, transparent 89.75% 92.5%, #0E0C03 92.5% 94.875%, transparent 94.875% 97.5%, #0E0C03 97.5% 100%);
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  pointer-events: none;
+  z-index: 9;
+}
+#image_1 > div {
+  position: absolute;
+  opacity: 0;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  pointer-events: none;
+}
+#image_1:hover > div {
+  opacity: 1;
+}
+#image_1 #i1_circle1 {
+  height: 40vmin;
+  width: 40vmin;
+  border-radius: 100%;
+  background-color: #0A8955;
+  left: -20vmin;
+  top: -20vmin;
+  z-index: 1;
+  transition: opacity 0.5s ease-out, translate 0.5s ease-out;
+}
+#image_1 #i1_circle2 {
+  height: 30vmin;
+  width: 30vmin;
+  border-radius: 100%;
+  background-color: #0e6d45;
+  left: -15vmin;
+  top: -15vmin;
+  z-index: 2;
+  transition: opacity 0.3s ease-out, translate 0.3s ease-out;
+}
+#image_1 #i1_circle3 {
+  height: 20vmin;
+  width: 20vmin;
+  border-radius: 100%;
+  background-color: #0d4b31;
+  left: -10vmin;
+  top: -10vmin;
+  z-index: 3;
+  transition: opacity 0.2s ease-out, translate 0.2s ease-out;
+}
+#image_1 #i1_circle4 {
+  height: 10vmin;
+  width: 10vmin;
+  border-radius: 100%;
+  background-color: #0a251a;
+  left: -5vmin;
+  top: -5vmin;
+  z-index: 4;
+  transition: opacity 0.1s ease-out, translate 0.1s ease-out;
+}
+
+p {
+  font-size: 4rem;
+}
+
+ol {
+  font-size: 4rem;
+  list-style: none;
+}
+ol li {
+  border-bottom: 1px solid #0E0C03;
+}
+ol a {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 1rem 0;
+  transition: opacity 0.3s;
+  opacity: 0.5;
+}
+ol a:hover {
+  opacity: 1;
+}
+ol a img {
+  height: 1em;
+  transform: rotate3d(-2, 0, 0, 0deg);
+  transition: transform 0.3s;
+}
+ol a:hover img {
+  transform: rotate3d(-2, 2, 0, -180deg);
+}
+ol small {
+  font-size: 2rem;
+  font-weight: 300;
+}/*# sourceMappingURL=main.css.map */
