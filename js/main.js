@@ -16,13 +16,29 @@ let Image1Handler = event => {
     })
 }
 
-let CursorHandler = event => {
-    let x = event.clientX
-    let y = event.clientY
-
-    document.querySelector("#cursor").setAttribute("style", `translate: ${x}px ${y}px`)
-}
-
 IMAGE1.addEventListener("mousemove", Image1Handler)
 
-document.addEventListener("mousemove", CursorHandler)
+const IMAGE2 = document.querySelector("#image_2")
+const quoterCircles = document.querySelectorAll("#image_2 div")
+
+let randomRotate = _ => `${~~(Math.random()*4) * 90}deg`
+
+let randomH = _ => 180 + ~~(Math.random() * 50)
+let randomS = _ => 80 + ~~(Math.random() * 10)
+let randomL = _ => 25 + ~~(Math.random() * 10)
+
+quoterCircles.forEach(circle => {
+    circle.setAttribute("data-rotate", ~~(Math.random()*4))
+    circle.style.rotate = `${+circle.getAttribute("data-rotate") * 90}deg`
+    circle.style.background = `hsl(${randomH()}, ${randomS()}%, ${randomL()}%)`
+
+    circle.addEventListener('click', _ => {
+        circle.setAttribute("data-rotate", (+circle.getAttribute("data-rotate") + 1))
+        circle.style.rotate = `${+circle.getAttribute("data-rotate") * 90}deg`
+    })
+
+    circle.addEventListener("contextmenu", e => {
+        e.preventDefault()
+        circle.style.background = `hsl(${randomH()}, ${randomS()}%, ${randomL()}%)`
+    })
+})

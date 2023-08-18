@@ -119,7 +119,7 @@ nav {
 }
 
 #image_1 {
-  background-image: linear-gradient(90deg, #0E0C03 0% 0.0625%, transparent 0.0625% 5%, #0E0C03 5% 5.1875%, transparent 5.1875% 10%, #0E0C03 10% 10.3125%, transparent 10.3125% 15%, #0E0C03 15% 15.4375%, transparent 15.4375% 20%, #0E0C03 20% 20.5625%, transparent 20.5625% 25%, #0E0C03 25% 25.6875%, transparent 25.6875% 30%, #0E0C03 30% 30.8125%, transparent 30.8125% 35%, #0E0C03 35% 35.9375%, transparent 35.9375% 40%, #0E0C03 40% 41.0625%, transparent 41.0625% 45%, #0E0C03 45% 46.1875%, transparent 46.1875% 50%, #0E0C03 50% 51.3125%, transparent 51.3125% 55%, #0E0C03 55% 56.4375%, transparent 56.4375% 60%, #0E0C03 60% 61.5625%, transparent 61.5625% 65%, #0E0C03 65% 66.6875%, transparent 66.6875% 70%, #0E0C03 70% 71.8125%, transparent 71.8125% 75%, #0E0C03 75% 76.9375%, transparent 76.9375% 80%, #0E0C03 80% 82.0625%, transparent 82.0625% 85%, #0E0C03 85% 87.1875%, transparent 87.1875% 90%, #0E0C03 90% 92.3125%, transparent 92.3125% 95%, #0E0C03 95% 97.4375%, transparent 97.4375% 100%);
+  background-image: linear-gradient(90deg, rgb(31, 26, 6) 0% 0.0625%, transparent 0.0625% 5%, rgb(31, 26, 6) 5% 5.1875%, transparent 5.1875% 10%, rgb(31, 26, 6) 10% 10.3125%, transparent 10.3125% 15%, rgb(31, 26, 6) 15% 15.4375%, transparent 15.4375% 20%, rgb(31, 26, 6) 20% 20.5625%, transparent 20.5625% 25%, rgb(31, 26, 6) 25% 25.6875%, transparent 25.6875% 30%, rgb(31, 26, 6) 30% 30.8125%, transparent 30.8125% 35%, rgb(31, 26, 6) 35% 35.9375%, transparent 35.9375% 40%, rgb(31, 26, 6) 40% 41.0625%, transparent 41.0625% 45%, rgb(31, 26, 6) 45% 46.1875%, transparent 46.1875% 50%, rgb(31, 26, 6) 50% 51.3125%, transparent 51.3125% 55%, rgb(31, 26, 6) 55% 56.4375%, transparent 56.4375% 60%, rgb(31, 26, 6) 60% 61.5625%, transparent 61.5625% 65%, rgb(31, 26, 6) 65% 66.6875%, transparent 66.6875% 70%, rgb(31, 26, 6) 70% 71.8125%, transparent 71.8125% 75%, rgb(31, 26, 6) 75% 76.9375%, transparent 76.9375% 80%, rgb(31, 26, 6) 80% 82.0625%, transparent 82.0625% 85%, rgb(31, 26, 6) 85% 87.1875%, transparent 87.1875% 90%, rgb(31, 26, 6) 90% 92.3125%, transparent 92.3125% 95%, rgb(31, 26, 6) 95% 97.4375%, transparent 97.4375% 100%);
   position: relative;
   display: flex;
   justify-content: center;
@@ -134,7 +134,7 @@ nav {
   bottom: 0;
   top: 0;
   right: 0;
-  background-image: linear-gradient(90deg, transparent 0% 2.5%, #0E0C03 2.5% 2.625%, transparent 2.625% 7.5%, #0E0C03 7.5% 7.75%, transparent 7.75% 12.5%, #0E0C03 12.5% 12.875%, transparent 12.875% 17.5%, #0E0C03 17.5% 18%, transparent 18% 22.5%, #0E0C03 22.5% 23.125%, transparent 23.125% 27.5%, #0E0C03 27.5% 28.25%, transparent 28.25% 32.5%, #0E0C03 32.5% 33.375%, transparent 33.375% 37.5%, #0E0C03 37.5% 38.5%, transparent 38.5% 42.5%, #0E0C03 42.5% 43.625%, transparent 43.625% 47.5%, #0E0C03 47.5% 48.75%, transparent 48.75% 52.5%, #0E0C03 52.5% 53.875%, transparent 53.875% 57.5%, #0E0C03 57.5% 59%, transparent 59% 62.5%, #0E0C03 62.5% 64.125%, transparent 64.125% 67.5%, #0E0C03 67.5% 69.25%, transparent 69.25% 72.5%, #0E0C03 72.5% 74.375%, transparent 74.375% 77.5%, #0E0C03 77.5% 79.5%, transparent 79.5% 82.5%, #0E0C03 82.5% 84.625%, transparent 84.625% 87.5%, #0E0C03 87.5% 89.75%, transparent 89.75% 92.5%, #0E0C03 92.5% 94.875%, transparent 94.875% 97.5%, #0E0C03 97.5% 100%);
+  background-image: linear-gradient(90deg, transparent 0% 2.5%, rgb(31, 26, 6) 2.5% 2.625%, transparent 2.625% 7.5%, rgb(31, 26, 6) 7.5% 7.75%, transparent 7.75% 12.5%, rgb(31, 26, 6) 12.5% 12.875%, transparent 12.875% 17.5%, rgb(31, 26, 6) 17.5% 18%, transparent 18% 22.5%, rgb(31, 26, 6) 22.5% 23.125%, transparent 23.125% 27.5%, rgb(31, 26, 6) 27.5% 28.25%, transparent 28.25% 32.5%, rgb(31, 26, 6) 32.5% 33.375%, transparent 33.375% 37.5%, rgb(31, 26, 6) 37.5% 38.5%, transparent 38.5% 42.5%, rgb(31, 26, 6) 42.5% 43.625%, transparent 43.625% 47.5%, rgb(31, 26, 6) 47.5% 48.75%, transparent 48.75% 52.5%, rgb(31, 26, 6) 52.5% 53.875%, transparent 53.875% 57.5%, rgb(31, 26, 6) 57.5% 59%, transparent 59% 62.5%, rgb(31, 26, 6) 62.5% 64.125%, transparent 64.125% 67.5%, rgb(31, 26, 6) 67.5% 69.25%, transparent 69.25% 72.5%, rgb(31, 26, 6) 72.5% 74.375%, transparent 74.375% 77.5%, rgb(31, 26, 6) 77.5% 79.5%, transparent 79.5% 82.5%, rgb(31, 26, 6) 82.5% 84.625%, transparent 84.625% 87.5%, rgb(31, 26, 6) 87.5% 89.75%, transparent 89.75% 92.5%, rgb(31, 26, 6) 92.5% 94.875%, transparent 94.875% 97.5%, rgb(31, 26, 6) 97.5% 100%);
   -webkit-user-select: none;
      -moz-user-select: none;
           user-select: none;
@@ -211,6 +211,7 @@ ol a {
   padding: 1rem 0;
   transition: opacity 0.3s;
   opacity: 0.5;
+  cursor: pointer;
 }
 ol a:hover {
   opacity: 1;
@@ -226,4 +227,17 @@ ol a:hover img {
 ol small {
   font-size: 2rem;
   font-weight: 300;
+}
+
+#image_2 {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 1rem;
+}
+#image_2 > div {
+  background: rebeccapurple;
+  aspect-ratio: 1;
+  border-radius: 100% 1rem 1rem 1rem;
+  transition: 0.2s ease-in-out;
 }/*# sourceMappingURL=main.css.map */
